@@ -5,7 +5,7 @@ function getVal() {
 }
 
 function addDot() {
-  if (dots.childNodes.length === 50) {
+  if (dots.childNodes.length === 100) {
     dots.textContent = '';
   }
   const dot = document.createElement('div');
@@ -15,7 +15,7 @@ function addDot() {
 }
 
 function initDots() {
-  setInterval(addDot, 500);
+  setInterval(addDot, 200);
 }
 
 export default initDots;
